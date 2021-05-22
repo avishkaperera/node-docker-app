@@ -11,4 +11,7 @@ services:
                 NODE_ENV: production
         environment: 
             - NODE_ENV=production
+            - MONGO_USER=admin
+            - MONGO_PASS=admin
+            - SESSION_SECRET=secret
         command: npm run start
